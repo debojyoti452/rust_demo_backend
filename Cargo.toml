@@ -1,0 +1,15 @@
+[package]
+authors = ["Debojyoti Singha"]
+name = "rust_demo_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = { version = "0.4.24", features = ["serde"] }
+rocket = { version = "0.5.0-rc.2", features = ["json"] }
+serde = { version = "1.0.163", features = ["derive"] }
+uuid = { version = "1.2.2", features = ["v4"] }
+
+# Swagger UI Dependencies
+utoipa = { version = "3", features = ["rocket_extras"] }
+utoipa-swagger-ui = { version = "3", features = ["rocket"] }
